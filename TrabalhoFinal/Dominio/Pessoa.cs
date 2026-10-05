@@ -1,4 +1,4 @@
-﻿namespace TrabalhoFinal
+﻿namespace TrabalhoFinal.Dominio
 {
     public class Pessoa
     {
