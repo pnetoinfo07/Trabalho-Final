@@ -1,12 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using TrabalhoFinal.Dominio;
 using TrabalhoFinal.Servicos;
+using TrabalhoFinal.Views;
 PessoaService.Listar();
-
-Console.WriteLine("Digite o nome da pessoa que deseja cadsatrar?");
-string nome = Console.ReadLine();
-Console.WriteLine("Digite o nome da pessoa que deseja cadsatrar?");
-string email = Console.ReadLine();
-DateTime data_Nacimento = DateTime.Now;
-PessoaService.Adicionar(nome, email, data_Nacimento);
-PessoaService.Listar();
+Console.WriteLine("Digite o Id do usuario que deseja excluir");
+int id = int.Parse(Console.ReadLine());
+PessoaService.Remover(id);
+PessoaService.Editar(4, "João", "João@gmail.com", Convert.ToDateTime("07/07/1999"));
